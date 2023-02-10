@@ -1,7 +1,9 @@
 /* Add CSS styling here */
 * {
     box-sizing: border-box;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
     max-width: 100%;
 }
 
@@ -17,7 +19,7 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-section {
+header, section {
     padding: 4% 0;
     margin: 0 auto;
 }
@@ -39,38 +41,36 @@ nav{
     justify-content: space-between;
 }
 
-links {
-    margin-top: 1rem;
-    margin-right: 1.5rem;
-}
-
 .topsection {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url(https://picsum.photos/800/500);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
 }
 
 /* Body Styles */
 
-.middlebutton {
-    background-image: url(https://picsum.photos/800/500);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-size: large;
-    width: 80rem;
-    height: 50rem;
-}
 
 h2 {
-    font-size: 6.5rem;
+    font-size: 6rem;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
     padding: 2rem;
+}
+
+.row div{
+    width: 30%;
+    margin: 2% 0;
 }
 
 footer {
@@ -110,4 +110,32 @@ button:hover {
 button a {
     text-decoration: none;
     color: inherit;
+}
+
+@media(max-width: 800px){
+
+}
+@media(max-width: 500px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links button{
+        width: 100%;
+        margin: 1% 0;
+    }
+    .topsection{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .row div{
+        width: 40%;
+    }
 }
