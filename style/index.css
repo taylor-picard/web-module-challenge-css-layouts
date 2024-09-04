@@ -1,7 +1,7 @@
-/* Add CSS styling here */
+
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -19,8 +19,8 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-header, section {
-    padding: 4% 0;
+header{
+    padding: 2% 0;
     margin: 0 auto;
 }
 
@@ -28,36 +28,60 @@ header, section {
 
 header {
     background-color: #bbd1fa;
+    display: flex;
+    justify-content: center;
+}
+
+.header-tags {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+
 }
 
 h1 {
-    font-size: 5rem;
-    font-family: 'Quicksand', sans-serif;
-    margin-left: 2rem;
+    font-size: 7rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 200;
+    font-style: italic;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    padding-top: 10%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .topsection {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://picsum.photos/800/500);
+    background-image: url(https://images.unsplash.com/photo-1585076641399-5c06d1b3365f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8MHwwfHx8Mg%3D%3D);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     text-align: center;
+    /* https://picsum.photos/800/500 */
+}
+
+.topsection a{
+    text-decoration: none;
+    font-size: 5rem;
+    font-family: "Montserrat", sans-serif;
+    color: azure;
 }
 
 /* Body Styles */
-
-
-h2 {
-    font-size: 6rem;
-}
 
 .row {
     display: flex;
